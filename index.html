@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My first webpage!</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <header id="home">
+
+        <nav>
+            <a href="#home-section">Home</a>
+            <a href="#about-section">About</a>
+            <a href="#contact-section">Contact</a>
+            <a href="https://sundsgarden.se/">Sundsgården Webpage</a>
+        </nav>
+
+        <h1>My first website</h1>
+    </header>
+
+    <main>
+        <section id="about-section"> <!-- id = refers to somewhere on the page-->
+        <h3>About section</h3>
+        <p> I want to <em>emphasize</em> that I <span class="words">love</span> nature and animals. <br>
+            I also think its <strong>important</strong> to mention that I <span class="words">like</span>
+            to paint and draw. I have two <small>tiny</small> mice and two bunnies.
+            </p>
+        </section>
+
+        <div class="container">
+            <p>hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p>
+        </div>
+
+        <section id="more-section">
+            <h3>More section</h3>
+            <ol> <!-- ol = ordered list with numbers-->
+                <li>Age: 22</li>
+                <li>Animals: 2 mice</li> <!-- li = list item-->
+                <li>Likes: Nature and to travel</li>
+            </ol>
+        </section>
+
+        <section id="contact-section">
+            <h3>Contact</h3>
+            <img src="images/pexelpic.jpg" alt="Happy girl" 
+            title="Happy girl sitting at a desk" width="30%" height="30%">
+            <p>Send me an email, include:</p>
+            <ul> <!-- ul = unordered list-->
+            <li>Name</li>
+            <li>Subject</li>
+            <li>Message</li>
+            </ul>
+            <p>Thank you!</p>
+        </section>
+
+        <footer>
+            <p>Made by Linnea. Goodbye</p>
+        </footer>
+    </main>
 </body>
 </html>

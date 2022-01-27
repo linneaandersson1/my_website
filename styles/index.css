@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(255, 224, 199);
+    font-family: sans-serif;
+    background: url(../images/pexelboy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200vh;
+} /*Allt i body får sans-serif font*/
+
+nav {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.container {
+    background-color: red;
+    display: inline-block;
+    height: 200px;
+}
+
+.words { /* <span> element inline*/
+    font-size: 25px;
+    color: red;
+}
+
+span {
+    font-size: 25px;
+    color: rgb(230, 86, 158);
+}
+
+section {
+    background-color: rgb(255, 255, 255, 0.6);
+    margin: 30px 60px;
+    padding: 50px;
+}
+/* vilka är klasser??*/
+
+img {
+    border: 5px dotted white;
+    border-top: 10px dotted white;
+    box-shadow: 10px 15px 20px salmon; /*horisontal offset, vertical offset, blur, color */
+}
+
+/* Priority
+1 In-line style
+2 Internal style
+3 External style 
+
+style written last if written twice (intro to css)*/
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
