@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first webpage!</title>
-    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header id="home">
@@ -23,16 +23,45 @@
 
     <main>
         <section id="about-section"> <!-- id = refers to somewhere on the page-->
-        <h3>About section</h3>
-        <p> I want to <em>emphasize</em> that I <span class="words">love</span> nature and animals. <br>
-            I also think its <strong>important</strong> to mention that I <span class="words">like</span>
-            to paint and draw. I have two <small>tiny</small> mice and two bunnies.
-            </p>
+            <h3>About section</h3>
+            <p> I want to <em>emphasize</em> that I <span class="words">love</span> nature and animals. <br>
+                I also think its <strong>important</strong> to mention that I <span>like</span>
+                to paint and draw. I have two <small>tiny</small> mice and two bunnies.
+                </p>
         </section>
+         <section>
 
-        <div class="container">
-            <p>hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
-                djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p>
+            <div class="container1">
+                <p class="container-content">hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk dde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk dde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p>
+            </div>
+
+            <div class="container2">
+                <p>hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p>
+            </div>
+
+            <div class="container3">
+                <p>hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p>
+            </div>
+         </section>
+
+        <!--block display: block-->
+        <div class="grid-container">
+
+            <!--block display: block-->
+            <div class="block">
+                <div> <p>hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p> </div>
+                <div> <p>hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p> </div>
+                <div> <p>hdde jdjdjd kjdjkddj jkdjkdjd jkdjkdjd jkdjddj 
+                    djdjdd djddjdjdj djkdjdjkdjkd jkdjdjddjk</p> </div>
+            </div>
+
         </div>
 
         <section id="more-section">
@@ -56,10 +85,9 @@
             </ul>
             <p>Thank you!</p>
         </section>
-
-        <footer>
-            <p>Made by Linnea. Goodbye</p>
-        </footer>
     </main>
+    <footer> <!-- Header, Main and Footer same level-->
+        <p>Made by Linnea. Goodbye</p>
+    </footer>
 </body>
 </html>

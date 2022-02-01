@@ -1,3 +1,8 @@
+/* selects all, has to be in the beginning to not overwrite styles
+* { 
+    text-align: right;
+} */
+
 body {
     background-color: rgb(255, 224, 199);
     font-family: sans-serif;
@@ -15,6 +20,26 @@ nav {
     padding: 30px;
 }
 
+/* unvisted link (MUST come before hover) */
+a:link {
+    color: red;
+}
+
+/* visted link (MUST come before visted) */
+a:visited {
+    color: green;
+}
+
+/* mouse hover over link*/
+a:hover {
+    color: hotpink;
+}
+
+/* selekted link */
+a:active {
+    color: blue;
+}
+
 h1 {
     color: white;
     font-size: 40px;
@@ -23,30 +48,85 @@ h1 {
     font-style: italic;
     text-transform: uppercase;
 }
-
+/* FIRST OF TYPE DOES NOT WORK */
 h3 {
     color: blue;
     text-align: center;
+}
+
+h3:first-of-type { /* pseudoelement, in this case - affects first of this tag */
+    color: black;
 }
 
 p {
     font-size: 20px;
 }
 
-.container {
+/* DISPLAY: INLINE-BLOCK */
+.container1 {
     background-color: red;
+    border: 5 px solid purple; /* visas ej??*/
     display: inline-block;
     height: 200px;
+    width: 400px;
+    padding: 20px;
+    margin: 30px 60px;
+    overflow: scroll;
+}
+
+.container-content {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.container2 {
+    background-color: blue;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin: 30px 60px;
+    overflow: scroll;
+}
+
+.container3 {
+    background-color: green;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin: 30px 60px;
+    overflow: scroll;
+}
+/* DISPLAY: BLOCK */
+.grid-container {
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: nowrap; /*do not wrap flex items*/
+    justify-content: space-around; /* space flex content evenly*/
+    align-items: center;
+}
+
+.block > div {
+    background-color: salmon;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin: 30px;
 }
 
 .words { /* <span> element inline*/
-    font-size: 25px;
     color: red;
 }
 
 span {
-    font-size: 25px;
     color: rgb(230, 86, 158);
+}
+
+.words, span { /* selects several elements/classes */
+    font-size: 30px;
 }
 
 section {
@@ -54,13 +134,17 @@ section {
     margin: 30px 60px;
     padding: 50px;
 }
-/* vilka är klasser??*/
 
 img {
     border: 5px dotted white;
     border-top: 10px dotted white;
     box-shadow: 10px 15px 20px salmon; /*horisontal offset, vertical offset, blur, color */
 }
+
+/* .hero {
+    width: 100%;
+    height: 100vh;
+}*/
 
 /* Priority
 1 In-line style
